@@ -6,23 +6,27 @@
 
 /* Header */
 #vos-criminul {
+    text-align: center;
+
     /* Dimension */
     width: 90%;
 
     /* Centrer horizontalement */
-    margin: 2.5rem auto;
+    margin: 1rem auto;
 
     /* Affichage en flexbox */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
 /* Titre */
 #vos-criminul h1 {
     /* Position relative */
     position: relative;
+
+    /* Marge */
+    margin-bottom: 2.5rem;
 }
 
 /* Loupe */
@@ -44,6 +48,11 @@
     transform: translateY(-34%) translateX(-43%) rotate(-30deg);
 }
 
+#vos-criminul p {
+    /* Marge */
+    margin-bottom: 0.5rem;
+}
+
 .loupe {
     /* Taille du texte sous la loupe */
     font-size: 1.5em;
@@ -52,30 +61,53 @@
 /* Conteneur des criminuls */
 #criminuls {
     width: 90%;
-    margin: 2.5rem auto;
+    margin: 0 auto;
 
     /* Affichage en grille */
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Criminuls */
 .criminul {
-    /* Affichage en grille */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Affichage en flex */
+    display: flex;
+}
+
+.criminul aside {
+    /* Dimensions */
+    height: 29vw;
+    width: 60%;
+
+    /* Centrer verticalement */
+    margin: auto 0;
 }
 
 /* Images */
 .criminul aside img {
+    /* Dimensions */
     height: 100%;
     width: 100%;
+
+    /* Rogner l'image */
+    object-fit: cover;
 }
 
 /* Articles */
 .criminul article {
-    margin: 1rem;
+    text-align: center;
+
+    /* Dimension */
+    width: 40%;
+
+    /* Marges */
+    margin: 0.5rem;
+}
+
+.criminul article h2 {
+    /* Marge */
+    margin-bottom: 0.5rem;
 }
 
 /* Desktop */
@@ -84,17 +116,49 @@
     #vos-criminul {
         /* Alignement à gauche */
         align-items: flex-start;
+
+        /* Marge */
+        margin-bottom: 5rem;
+    }
+
+    #vos-criminul p {
+        /* Marge */
+        margin-bottom: 0;
     }
 
     /* Conteneur des criminuls */
     #criminuls {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* Criminuls */
     .criminul {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+
+        /* Dimension */
+        width: 25%;
+    }
+    
+    .criminul aside {
+        /* Dimensions */
+        height: 14vw;
+        width: 100%;
+    }
+
+    /* Articles */
+    .criminul article {
+        text-align: initial;
+
+        /* Marges */
+        margin: 1rem 0;
+
+        /* Dimension */
+        width: 100%;
+    }
+
+    .criminul article h2 {
+        /* Marge */
+        margin-bottom: 1rem;
     }
 }
