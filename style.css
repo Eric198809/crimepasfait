@@ -1,0 +1,48 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Navbar*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    font-size: calc(0.5rem + 1rem);
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: black;
+}
+
+
+.logotitre{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navlogo img{
+    width: 100px;
+}
+
+
+
