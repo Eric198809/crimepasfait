@@ -1,0 +1,65 @@
+@media screen and (max-width: 600px) {
+    .image {
+        width: 100%;
+    }
+}    
+h1{
+    width: 192px;
+    font-family: Holtwood One SC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #FFF 0%, #000 99.48%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.75px; /* 163.75% */
+    letter-spacing: 0.1px;
+}
+
+body{
+    background: linear-gradient(213deg, #333 17.68%, #940606 57.5%, #333 100.42%);
+    width: 320px;
+    height: 755px;
+}
+p{
+    width: 244px;
+    height: 156px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 120% */
+    letter-spacing: 0.05px;
+}
+nav{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: lightgray 50% / cover no-repeat;
+}
+.photos{
+    box-shadow: 0px 4px 4px 0px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.images{
+    width: 48%; 
+    margin-bottom: 2%;
+}
+
+.image img {
+    width: 98px; 
+    height: 95px; 
+}
+
