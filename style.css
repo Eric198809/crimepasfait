@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#vos-criminul {
+    /* Dimension */
+    width: 90%;
+
+    /* Centrer horizontalement */
+    margin: 1rem auto;
+
+    /* Affichage en flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Titre */
+#vos-criminul h1 {
+    /* Position relative */
+    position: relative;
+}
+
+/* Loupe */
+#vos-criminul h1::before {
+    content: "";
+
+    /* Afficher la loupe */
+    background-image: url("/images_criminul/loupe.png");
+    background-size: cover;
+
+    /* Dimensions de la loupe */
+    width: 115px;
+    height: 115px;
+
+    /* Position absolue */
+    position: absolute;
+
+    /* Positionnement de la loupe  */
+    transform: translateY(-34%) translateX(-43%) rotate(-30deg);
+}
+
+.loupe {
+    /* Taille du texte sous la loupe */
+    font-size: 1.5em;
+}
+
+/* Conteneur des criminuls */
+#criminuls {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Criminuls */
+.criminul {
+    /* Affichage en grille */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Dimension */
+    width: 90%;
+
+    /* Centrer horizontalement */
+    margin: 1rem auto;
+}
+
+/* Images */
+.criminul aside img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Articles */
+.criminul article {
+    margin: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width:769px) {
+    /* Header */
+    #vos-criminul {
+        /* Alignement à gauche */
+        align-items: flex-start;
+
+        /* Marges */
+        margin: 2.5rem auto;
+    }
+
+    /* Titre */
+    #vos-criminul h1 {
+        /* Marges */
+        margin: 2.5rem 0;
+    }
+
+    /* Conteneur des criminuls */
+    #criminuls {
+        /* Passage en flexbox */
+        display: flex;
+    }
+}
