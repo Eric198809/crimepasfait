@@ -100,5 +100,12 @@
     #criminuls {
         /* Passage en flexbox */
         display: flex;
+        gap: 2.5rem;
+    }
+
+    /* Criminuls */
+    .criminul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
