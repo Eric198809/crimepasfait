@@ -10,7 +10,7 @@
     width: 90%;
 
     /* Centrer horizontalement */
-    margin: 1rem auto;
+    margin: 2.5rem auto;
 
     /* Affichage en flexbox */
     display: flex;
@@ -52,7 +52,12 @@
 /* Conteneur des criminuls */
 #criminuls {
     width: 90%;
-    margin: 0 auto;
+    margin: 2.5rem auto;
+
+    /* Affichage en grille */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2.5rem;
 }
 
 /* Criminuls */
@@ -60,12 +65,6 @@
     /* Affichage en grille */
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    /* Dimension */
-    width: 90%;
-
-    /* Centrer horizontalement */
-    margin: 1rem auto;
 }
 
 /* Images */
@@ -85,22 +84,12 @@
     #vos-criminul {
         /* Alignement à gauche */
         align-items: flex-start;
-
-        /* Marges */
-        margin: 2.5rem auto;
-    }
-
-    /* Titre */
-    #vos-criminul h1 {
-        /* Marges */
-        margin: 2.5rem 0;
     }
 
     /* Conteneur des criminuls */
     #criminuls {
-        /* Passage en flexbox */
-        display: flex;
-        gap: 2.5rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr
     }
 
     /* Criminuls */
