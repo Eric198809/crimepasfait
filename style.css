@@ -1,5 +1,6 @@
 :root{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
+    margin: 0 0;
 }
 
 /*Navbar*/
@@ -9,9 +10,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-right: 5px;
-    background-color: black;
-    color: white;
     font-size: calc(0.5rem + 1rem);
+    background: linear-gradient(229deg, #333 26.8%, #BB0D0D 96.11%, #333 155.14%);
 }
 
 .navmenu{
@@ -19,12 +19,13 @@ nav{
     justify-content: space-between;
     list-style: none;
     width: 30%;
-    
 }
 
 a{
     color: white;
     text-decoration: none;
+    font-size: 1rem;
+
     
 }
 
@@ -33,16 +34,84 @@ a:hover{
 }
 
 
+.navtitre{
+display: flex;
+font-family: 'Holtwood One SC', serif;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(180deg, #000 0%, #ADADAD 67.71%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+
+}
 .logotitre{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
+   
 }
 
 .navlogo img{
     width: 100px;
 }
 
+#icons{
+    cursor: pointer;
+    display: none;
+    color: #FFE500;
+}
 
+@media (max-width:768px) {
 
+    
+    #icons {
+        display: block;
+        padding: 8px;
+        
+        
+    }
+    #icons:before {
+       content: "\2630"; 
+    } 
+
+       .active #icons:before{
+        content : "\2715";
+       }
+    
+
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 10%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+        background: linear-gradient(229deg, #333 26.8%, #BB0D0D 96.11%, #333 155.14%);
+        padding: 0;
+    }
+
+    nav li{
+        padding: 5px;
+    }
+    nav li:hover{
+        background: rgb(59, 57, 57);
+    }
+
+    .active ul{
+        left: 0;
+    }
+
+    .navtitre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+}
