@@ -1,4 +1,5 @@
 
+
 html{
    height: 100%; 
 }
@@ -14,22 +15,37 @@ header h1{
     justify-content: center;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
 }
 
-@keyframes tracking-in-expand {
+@keyframes text-focus-in {
     0% {
-      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
       opacity: 0;
     }
-    40% {
-      opacity: 0.6;
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
     }
     100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
       opacity: 1;
     }
   }
   
+
+
 
 header p{
     display: flex;
@@ -43,7 +59,10 @@ header p{
 }
 
 body{
-    background: linear-gradient(205deg, #333 21.71%, #940606 60.75%, #333 102.82%);
+    background: url(img/background\ projet.jpg);
+    background-size: cover;
+    background-position: center;
+    
     
 }
 
@@ -108,7 +127,7 @@ textarea{
 }
 .submit:hover{
     animation: heartbeat 1.5s ease-in-out infinite both;
-    background: linear-gradient(148deg, #333 19.41%, #BB0D0D 108.27%, #333 135.61%);
+    background: linear-gradient(#232526, #414345);
     color: #FFE500;
     
 }
