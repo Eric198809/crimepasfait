@@ -1,3 +1,14 @@
+/*body resposive avec degradé et img police pour page accueil*/
 body{
     background: linear-gradient(205deg, #333 21.71%, #940606 60.75%, #333 102.82%);
-}
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    }
+
+    
+
+
+
+    
