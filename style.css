@@ -11,8 +11,6 @@ h1{
 
 body{
     background: linear-gradient(213deg, #333 17.68%, #940606 57.5%, #333 100.42%);
-    width: 320px;
-    height: 755px;
 }
 p{
     width: 200px;
@@ -101,9 +99,4 @@ p::after {
     p::after {
         display: none;
     }
-    .para{
-        display: flex;
-        justify-content: flex-end;
-    }
-    
 }
