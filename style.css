@@ -1,6 +1,7 @@
-:root{
+ 
+body{
+    margin: 0;
     font-family: Montserrat;
-    margin: 0 0;
 }
 
 /*Navbar*/
@@ -20,14 +21,14 @@ nav{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 30%;
+    width: 20%;
 }
 
 /*Lien navbar*/
 a{
     color: white;
     text-decoration: none;
-    font-size: 1rem;   
+    font-size: 1.2rem;   
 }
 
 a:hover{
@@ -36,8 +37,11 @@ a:hover{
 
 
 /*bloc logo et titre*/
+
+
 .logotitre{
     display: flex;
+    justify-content: space-between;
     gap: 2rem;
     align-items: center;  
 }
@@ -65,17 +69,19 @@ background-clip: text;
     cursor: pointer;
     display: none;
     color: #FFE500;
+    
 }
 
 /*Verson mobile*/
 
 @media (max-width:768px) {
 
+
     /*Menu navbar*/
     .navmenu{
         position: fixed;
         left: -100%;
-        top: 13.2%;
+        top: 10%;
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -86,6 +92,7 @@ background-clip: text;
 
 
     /*Lignes menu navbar*/
+    
     nav li{
         padding: 5px;
     }
@@ -93,11 +100,11 @@ background-clip: text;
         background: rgb(59, 57, 57);
     }
 
+    /*Titre navbar*/
     .navtitre{
-        display: flex;
-        align-items: center;
-        font-size: 1.3rem;
+       font-size: 1rem;
     }
+
 
     .active ul{
         left: 0;
@@ -106,7 +113,7 @@ background-clip: text;
     #icons {
         display: block;
         padding: 8px;
-        
+       
         
     }
     #icons:before {
