@@ -5,6 +5,7 @@
 
 /*Navbar*/
 
+/*Container navbar*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,7 @@ nav{
     background: linear-gradient(229deg, #333 26.8%, #BB0D0D 96.11%, #333 155.14%);
 }
 
+/*Menu navbar*/
 .navmenu{
     display: flex;
     justify-content: space-between;
@@ -21,12 +23,11 @@ nav{
     width: 30%;
 }
 
+/*Lien navbar*/
 a{
     color: white;
     text-decoration: none;
-    font-size: 1rem;
-
-    
+    font-size: 1rem;   
 }
 
 a:hover{
@@ -34,6 +35,14 @@ a:hover{
 }
 
 
+/*bloc logo et titre*/
+.logotitre{
+    display: flex;
+    gap: 2rem;
+    align-items: center;  
+}
+
+/*Titre navbar*/
 .navtitre{
 display: flex;
 font-family: 'Holtwood One SC', serif;
@@ -44,18 +53,10 @@ line-height: normal;
 background: linear-gradient(180deg, #000 0%, #ADADAD 67.71%, #FFF 100%);
 background-clip: text;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-    
-
-}
-.logotitre{
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
-   
+-webkit-text-fill-color: transparent;   
 }
 
+/*Logo navbar*/
 .navlogo img{
     width: 100px;
 }
@@ -66,9 +67,42 @@ background-clip: text;
     color: #FFE500;
 }
 
+/*Verson mobile*/
+
 @media (max-width:768px) {
 
-    
+    /*Menu navbar*/
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 13.2%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+        background: linear-gradient(229deg, #333 26.8%, #BB0D0D 96.11%, #333 155.14%);
+        padding: 0;
+    }
+
+
+    /*Lignes menu navbar*/
+    nav li{
+        padding: 5px;
+    }
+    nav li:hover{
+        background: rgb(59, 57, 57);
+    }
+
+    .navtitre{
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+
+    .active ul{
+        left: 0;
+    }
+
     #icons {
         display: block;
         padding: 8px;
@@ -83,35 +117,4 @@ background-clip: text;
         content : "\2715";
        }
     
-
-    .navmenu{
-        position: fixed;
-        left: -100%;
-        top: 10%;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        transition: 0.25s;
-        background: linear-gradient(229deg, #333 26.8%, #BB0D0D 96.11%, #333 155.14%);
-        padding: 0;
     }
-
-    nav li{
-        padding: 5px;
-    }
-    nav li:hover{
-        background: rgb(59, 57, 57);
-    }
-
-    .active ul{
-        left: 0;
-    }
-
-    .navtitre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.3rem;
-    }
-
-}
