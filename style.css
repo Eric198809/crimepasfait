@@ -45,7 +45,7 @@
     position: absolute;
 
     /* Positionnement de la loupe  */
-    transform: translateY(-34%) translateX(-43%) rotate(-30deg);
+    transform: translateY(-35%) translateX(-43%) rotate(-30deg);
 }
 
 #vos-criminul p {
@@ -56,6 +56,9 @@
 .loupe {
     /* Taille du texte sous la loupe */
     font-size: 1.5em;
+
+    /* Marge */
+    margin-right: 0.5rem;
 }
 
 /* Conteneur des criminuls */
@@ -63,7 +66,7 @@
     width: 90%;
     margin: 0 auto;
 
-    /* Affichage en grille */
+    /* Affichage en flexbox */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -75,13 +78,20 @@
     display: flex;
 }
 
+.criminul.active {
+    /* Centrer */
+    margin: auto;
+}
+
 .criminul aside {
     /* Dimensions */
     height: 29vw;
     width: 60%;
+}
 
-    /* Centrer verticalement */
-    margin: auto 0;
+/* On cache l'image quand on retourne la carte */
+.criminul.active aside {
+    display: none;
 }
 
 /* Images */
@@ -102,12 +112,39 @@
     width: 40%;
 
     /* Marges */
-    margin: 0.5rem;
+    margin: auto 0.5rem;
+}
+
+/* On cache la présentation de l'histoire quand on retourne la carte */
+.criminul.active article {
+    display: none;
 }
 
 .criminul article h2 {
     /* Marge */
     margin-bottom: 0.5rem;
+
+    /* On souligne les titres */
+    text-decoration: underline;
+
+    /* On modifie l'affichage de la souris au survol */
+    cursor: pointer;
+}
+
+/* On cache l'histoire tant que la carte n'est pas retournée */
+.more {
+    display: none;
+}
+
+.criminul.active .more{
+    /* On l'affiche */
+    display: initial;
+
+    /* Centrer */
+    margin: auto;
+
+    /* On change l'affichage de la souris au survol */
+    cursor: pointer;
 }
 
 /* Desktop */
@@ -119,6 +156,9 @@
 
         /* Marge */
         margin-bottom: 5rem;
+
+        /* Dimension */
+        width: 80%;
     }
 
     #vos-criminul p {
@@ -130,16 +170,24 @@
     #criminuls {
         flex-direction: row;
         justify-content: space-between;
+
+        /* Dimension */
+        width: 80%;
     }
 
     /* Criminuls */
     .criminul {
         flex-direction: column;
 
-        /* Dimension */
+        /* Dimensions */
+        height: 100%;
         width: 25%;
     }
     
+    .criminul.active{
+        width: 40%;
+    }
+
     .criminul aside {
         /* Dimensions */
         height: 14vw;
@@ -160,5 +208,12 @@
     .criminul article h2 {
         /* Marge */
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 506px) {  
+    .criminul article p {
+        /* On retire le paragraphe */
+        display: none;
     }
 }
