@@ -1,10 +1,13 @@
 /*body resposive avec degradé et img police pour page Raconte-Nous*/
 body{
-    background: linear-gradient(205deg, #333 21.71%, #940606 60.75%, #333 102.82%);
-    display:flex;
+    background:  url(background.png), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+     display:flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+
     }
  img{
     max-width: 100%;
