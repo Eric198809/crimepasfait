@@ -76,17 +76,28 @@
 .criminul {
     /* Affichage en flex */
     display: flex;
+
+    /* Transition */
+    transition: 0.4s;
 }
 
 .criminul.active {
     /* Centrer */
-    margin: auto;
+    padding: 1rem;
+
+    /* Bordures */
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .criminul aside {
     /* Dimensions */
     height: 29vw;
     width: 60%;
+
+    /* Bordures */
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* On cache l'image quand on retourne la carte */
@@ -102,6 +113,9 @@
 
     /* Rogner l'image */
     object-fit: cover;
+
+    /* Bordures */
+    border-radius: 10px;
 }
 
 /* Articles */
@@ -112,7 +126,11 @@
     width: 40%;
 
     /* Marges */
-    margin: auto 0.5rem;
+    padding: 0.5rem;
+
+    /* Bordures */
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* On cache la présentation de l'histoire quand on retourne la carte */
@@ -170,6 +188,7 @@
     #criminuls {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         /* Dimension */
         width: 80%;
