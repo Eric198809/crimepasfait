@@ -14,7 +14,7 @@ body{
     width: 320px;
     height: 755px;
 }
-.para{
+p{
     width: 200px;
     height: 70px;
     color: #FFF;
@@ -27,7 +27,7 @@ body{
     position: relative;
     padding-left: 10px;
 }
-.para::after {
+p::after {
     content: '';
     position: absolute;
     top: 0;
@@ -64,7 +64,6 @@ body{
     margin: 0;
 }
 
-/* Desktop */
 @media screen and (min-width:769px) {
     .photos {
         display: grid;
@@ -84,19 +83,27 @@ body{
         margin-top: 5%;
     }
 
-    .para{
-        width: 70%;
+    p{
+        width: 200px;
         height: auto;
-        margin: 0;
-        padding-left: 0;
-         
+        margin-bottom: 80px;
+        font-size: 20px;
+        line-height: 20px;     
     }
+
     main{
         display: flex;
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 20px;
     };
 
-    .para::after {
+    p::after {
         display: none;
     }
+    .para{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
 }
