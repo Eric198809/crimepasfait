@@ -1,4 +1,4 @@
- 
+  
 body{
     margin: 0;
     font-family: Montserrat;
@@ -21,7 +21,7 @@ nav{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 20%;
+    width: 30%;
 }
 
 /*Lien navbar*/
@@ -36,8 +36,7 @@ a:hover{
 }
 
 
-/*bloc logo et titre*/
-
+/*Container logo et titre*/
 
 .logotitre{
     display: flex;
@@ -46,7 +45,7 @@ a:hover{
     align-items: center;  
 }
 
-/*Titre navbar*/
+/*Titre */
 .navtitre{
 display: flex;
 font-family: 'Holtwood One SC', serif;
@@ -60,7 +59,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;   
 }
 
-/*Logo navbar*/
+/*Logo */
 .navlogo img{
     width: 100px;
 }
@@ -101,12 +100,12 @@ background-clip: text;
         background: rgb(59, 57, 57);
     }
 
-    /*Titre navbar*/
+    /*Titre */
     .navtitre{
         font-size: 1rem;
      }
  
-
+/* Class active visible */
     .active ul{
         left: 0;
     }
