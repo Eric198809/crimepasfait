@@ -1,5 +1,5 @@
 /*body resposive avec degradé et img police pour page accueil*/
-#background{
+#AboutUs-CrimiN{
     background:  url(background.png), lightgray 50% / cover no-repeat;
      display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     
     }
 
-    img{
+    #AboutUs-CrimiN img{
         position: fixed;
         right:0px;
         bottom: 0px; 
