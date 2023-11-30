@@ -13,8 +13,8 @@ body{
     background: linear-gradient(213deg, #333 17.68%, #940606 57.5%, #333 100.42%);
 }
 p{
-    width: 200px;
-    height: 70px;
+    width: 100%;
+    height: auto;
     color: #FFF;
     font-family: Montserrat;
     font-size: 15px;
@@ -76,7 +76,6 @@ p::after {
     }
 
     .images img {
-        width: 100%;
         margin-bottom: 5%;
         margin-top: 5%;
     }
@@ -84,19 +83,21 @@ p::after {
     p{
         width: 100%;
         height: auto;
-        margin-bottom: 80px;
         font-size: 20px;
-        line-height: 20px;     
-    }
+        line-height: 20px; 
+          
+    } 
 
     main{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 20px;
-    };
+        align-items: center;
+    } 
 
     p::after {
         display: none;
     }
+    
 }
