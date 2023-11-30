@@ -10,7 +10,7 @@ body {
 
     /* Première section */
 
-    #slogan {
+    #Hslogan {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,13 +18,13 @@ body {
         margin-bottom: 50px;
     }
 
-    .text {
+    .Htext {
         font-size: 1.5rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
     }
 
-    .line {
+    .Hline {
         background-color: #FFE500;
         padding-inline: 500px;
         padding-block: 1px;
@@ -32,14 +32,14 @@ body {
 
     /* Deuxième section */
 
-    #history {
+    #Hhistory {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 100px;
         justify-content: center;
     }
 
-    article {
+    .Harticle {
         font-size: 1.5rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
@@ -48,23 +48,23 @@ body {
         align-items: center;
     }
 
-    img {
+    .Himg {
         height: 200px;
     }
 
 
-    .info {
+    .Hinfo {
         display:flex;
         flex-direction: column;
         margin-left: 40px;
     }
 
-    h2 {
+    .Hh2 {
         margin: 0;
         font-style: italic;
     }
 
-    button {
+    .Hbutton {
         background-color:#ffffff;
         color:#000000;
         border : 1px transparent solid;
@@ -78,7 +78,7 @@ body {
 
     /* Première section */
 
-    #slogan {
+    #Hslogan {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -86,7 +86,7 @@ body {
         margin-bottom: 50px;
     }
 
-    .text {
+    .Htext {
         font-size: 1.2rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
@@ -94,7 +94,7 @@ body {
         margin-inline: 50px;
     }
 
-    .line {
+    .Hline {
         background-color: #FFE500;
         width: 80%;
         padding-block: 1px;
@@ -102,7 +102,7 @@ body {
 
     /* Deuxième section */
 
-    #history {
+    #Hhistory {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,7 +110,7 @@ body {
         row-gap: 15px;
     }
 
-    article {
+    .Harticle {
         font-size: 1.5rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
@@ -120,29 +120,29 @@ body {
         width: 80%;
     }
 
-    img {
+    .Himg {
         height: 100px;
         object-fit: cover;
         box-shadow: 0px 4px 4px 0px #000000;
     }
 
 
-    .info {
+    .Hinfo {
         margin-left: 20px;
         margin-block: 20px;
     }
 
-    h2 {
+    .Hh2 {
         margin: 0;
         font-style: italic;
         font-size: 1.5rem;
     }
 
-    .describe {
+    .Hdescribe {
         font-size: 1rem;
     }
 
-    button {
+    .Hbutton {
         background-color:#ffffff;
         color:#000000;
         border : 1px transparent solid;
