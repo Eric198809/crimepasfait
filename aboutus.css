@@ -1,4 +1,4 @@
-h1{
+.titre{
     color: #FFF;
     font-family: Montserrat;
     font-size: 35px;
@@ -10,9 +10,9 @@ h1{
 }
 
 body{
-    background: linear-gradient(213deg, #333 17.68%, #940606 57.5%, #333 100.42%);
+    background: red;
 }
-p{
+.par{
     width: 100%;
     height: auto;
     color: #FFF;
@@ -50,9 +50,10 @@ p::after {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px;
     padding: 5px;
+    margin-left: 80px;
 }
 
-.images h3 {
+.images .nom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px;
@@ -67,6 +68,7 @@ p::after {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px; 
+        margin-left: 0;
     }
 
     .images {
@@ -80,15 +82,20 @@ p::after {
         margin-top: 5%;
     }
 
-    p{
+    .nom{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .par{
         width: 100%;
         height: auto;
-        font-size: 20px;
-        line-height: 20px; 
+        font-size: 35px;
+        line-height: 45px; 
           
     } 
 
-    main{
+    .all{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -99,5 +106,4 @@ p::after {
     p::after {
         display: none;
     }
-    
 }
