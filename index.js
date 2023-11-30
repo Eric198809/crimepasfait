@@ -1,3 +1,5 @@
+/* //////Navbar/////////*/
+
 icons.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
@@ -9,3 +11,5 @@ links.forEach((link) => {
     navbar.classList.remove("active");
   });
 });
+
+/* //////Fin Navbar/////////*/
