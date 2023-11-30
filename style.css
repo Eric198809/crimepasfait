@@ -82,7 +82,7 @@ p::after {
     }
 
     p{
-        width: 200px;
+        width: 100%;
         height: auto;
         margin-bottom: 80px;
         font-size: 20px;
