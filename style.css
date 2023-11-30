@@ -1,5 +1,5 @@
 /*body resposive avec degradé et img police pour page Raconte-Nous*/
-body{
+#background{
     background:  url(background.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
