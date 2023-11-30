@@ -7,6 +7,20 @@
     line-height: 32.75px; 
     letter-spacing: 0.1px;
     text-align: center;
+    transform-origin: center;
+    }
+    
+.animate {
+    animation: rotate 4s linear 1;
+}
+    
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
 }
 
 body{
@@ -43,7 +57,11 @@ p::after {
     width: 70%; 
     margin-bottom: 5%;
     margin-top: 5%;
+    transition: transform 0.3s ease-in-out;
+}
 
+.images img:hover {
+    transform: scale(1.2); 
 }
 .photos{
     display: grid;
@@ -105,5 +123,8 @@ p::after {
 
     p::after {
         display: none;
+    }
+    .titre{
+        font-size: 60px;
     }
 }
