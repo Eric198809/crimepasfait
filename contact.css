@@ -1,5 +1,7 @@
 
-
+body{
+    background-color: black;
+}
 .text{
     margin-top: 25%;
    
@@ -213,7 +215,7 @@ transform: translate(-50%, -50%)scale(1);
     }
 } 
 
-/* @media screen and (min-width: 900px){
+@media screen and (min-width: 900px){
     .light{
         position: fixed;
         top: 0;
@@ -222,4 +224,4 @@ transform: translate(-50%, -50%)scale(1);
         height: 100%;
         pointer-events: none;
         background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20% ); 
-     }  */
+     } 
