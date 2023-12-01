@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo CPF.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
-
-<header class="text">
-    <h1>Contact</h1>
-    <p>Racontez-nous vos histoires criminelles nulles mais drôle ! </p>
-</header>
-
 <body>
+    <nav id="navbar">
+
+        <div id="icons"></div>
+        
+         <ul class="navmenu">
+            <li><a href= index.html>Accueil</a></li>
+            <li><a href= contact.html>Contact</a></li>
+            <li><a href= aboutus.html>About us</a></li>
+            <li><a href= criminul.html>Crimi'Nul</a></li>
+        </ul>
+        
+        <div class="logotitre">
+        
+              <h3 class="navtitre">CRIMES PAS-FAIT</h3>
+        
+               <div class="navlogo"> 
+                 <img src="Logo.png" alt="logo">
+               </div>
+        
+        </div>
+        
+        </nav>
+
+        <header class="text">
+            <h1>Contact</h1>
+            <p>Racontez-nous vos histoires criminelles nulles mais drôle ! </p>
+        </header>
+
     <div class="formul">
         <form>
           <label for="pseudo">Pseudo</label>
@@ -25,7 +52,6 @@
           <input type="text" id="title" name="title" placeholder="ex: Escapade criminelle"><br><br>
           <label for="textarea">Ton histoire</label>
           <textarea name="textarea" rows="5" cols="30" placeholder="Votre histoire ici..."></textarea><br>
-          
         </form>
     </div>
     <div class="form_button">
@@ -43,7 +69,7 @@
 
     <div class="light"></div>
 
-
  <script src="index.js"></script>   
+
 </body>
 </html>

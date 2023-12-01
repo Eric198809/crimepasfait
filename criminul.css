@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* Header */
 #vos-criminul {
     text-align: center;
@@ -30,36 +24,36 @@
 }
 
 /* Loupe */
-#vos-criminul h1::before {
-    content: "";
+/* #vos-criminul h1::before {
+    content: ""; */
 
     /* Afficher la loupe */
-    background-image: url("/images_criminul/loupe.png");
-    background-size: cover;
+    /* background-image: url("/images_criminul/loupe.png");
+    background-size: cover; */
 
     /* Dimensions de la loupe */
-    width: 115px;
-    height: 115px;
+    /* width: 115px;
+    height: 115px; */
 
     /* Position absolue */
-    position: absolute;
+    /* position: absolute; */
 
     /* Positionnement de la loupe  */
-    transform: translateY(-35%) translateX(-43%) rotate(-30deg);
-}
+    /* transform: translateY(-35%) translateX(-43%) rotate(-30deg); */
+/* } */
 
 #vos-criminul p {
     /* Marge */
     margin-bottom: 0.5rem;
 }
 
-.loupe {
+/* .loupe { */
     /* Taille du texte sous la loupe */
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 
     /* Marge */
-    margin-right: 0.5rem;
-}
+    /* margin-right: 0.5rem; */
+/* } */
 
 /* Conteneur des criminuls */
 #criminuls {
@@ -86,7 +80,7 @@
     padding: 1rem;
 
     /* Bordures */
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
