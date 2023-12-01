@@ -1,0 +1,122 @@
+/* //////Navbar/////////*/
+
+/*Container navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(0.5rem + 1rem);
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.69) 0.01%, rgba(0, 0, 0, 0.67) 0.02%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+/*Menu navbar*/
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+}
+
+/*Lien navbar*/
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;   
+}
+
+nav a:hover{
+    color: rgb(143, 138, 138);
+}
+
+nav ul {
+    margin: 0;
+}
+
+/*Container logo et titre*/
+
+.logotitre{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;  
+}
+
+/*Titre */
+.navtitre{
+    display: flex;
+    font-family: 'Holtwood One SC', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #000 0%, #ADADAD 67.71%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+/*Logo */
+.navlogo img{
+    width: 100px;
+}
+
+#icons{
+    cursor: pointer;
+    display: none;
+    color: #FFE500;
+    
+}
+
+/*Verson mobile*/
+
+@media (max-width:768px) {
+
+    /*Menu navbar*/
+    .navmenu{
+        position: fixed;
+        left: -100%;
+        top: 106px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+        background: #080404;
+        padding: 0;
+        z-index: 1;
+    }
+
+    /*Lignes menu navbar*/
+    nav li{
+        padding: 5px;
+    }
+
+    nav li:hover{
+        background: rgb(59, 57, 57);
+    }
+
+    /*Titre */
+    .navtitre{
+        font-size: 1rem;
+     }
+ 
+    /* Class active visible */
+    .active ul{
+        left: 0;
+    }
+
+    #icons {
+        display: block;
+        padding: 8px;
+       
+        
+    }
+    #icons:before {
+       content: "\2630"; 
+    } 
+
+       .active #icons:before{
+        content : "\2715";
+       }
+    
+}
+/* //////Fin Navbar/////////*/
