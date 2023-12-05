@@ -70,6 +70,10 @@ input{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
 }
 
+input:hover, textarea:hover{
+  box-shadow: #ffffff 0px 10px 30px -10px;
+}
+
 textarea{
   display: flex;
   justify-content: flex-start;
@@ -118,6 +122,17 @@ textarea{
       transform: scale(1);
       animation-timing-function: ease-out;
     }
+}
+
+.msg{
+  display: none;
+  color: red;
+  font-size: 0.8em;
+}
+
+#compteurCaracteres{
+  color: #FFE500;
+  text-align: right;
 }
   
 /* La popup */
@@ -205,3 +220,6 @@ textarea{
         pointer-events: none;
         background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20% ); 
      } 
+    }
+
+

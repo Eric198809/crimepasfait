@@ -76,6 +76,11 @@ p::after {
     padding: 1%;
     margin: 0;
 }
+.nom:hover, .images:hover{
+    color: #FFE500;
+}
+
+
 
 @media screen and (min-width:769px) {
     .photos {

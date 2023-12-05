@@ -13,6 +13,9 @@ links.forEach((link) => {
 });
 
 /* //////Fin Navbar/////////*/
+
+/////// Page contact /////////////////////////////////////////////
+// Le popup //
 let popup = document.getElementById("popup");
 
 function openPopup() {
@@ -22,11 +25,57 @@ function closePopup() {
   popup.classList.remove("open-popup");
 }
 
+// Verification d'age + message si age < 12
+function verifierAge() {
+
+  const inputAge = document.getElementById("age");
+  const messageParental = document.querySelector(".msg");
+
+  inputAge.addEventListener("input", function() {
+    
+      const age = parseInt(inputAge.value);
+
+      
+      if (age < 12) {
+          
+          messageParental.style.display = "block";
+      } else {
+          
+          messageParental.style.display = "none";
+      }
+  });
+}
+
+// Max 999 caract dans textarea
+function limiterCaracteres() {
+  const textarea = document.querySelector("textarea");
+  const limiteCaracteres = 999;
+  const compteur = document.getElementById("compteurCaracteres");
+
+  textarea.addEventListener("input", function() {
+      const texte = textarea.value;
+
+      if (texte.length > limiteCaracteres) {
+          textarea.value = texte.slice(0, limiteCaracteres);
+      }
+
+      // Mettre à jour le compteur de caractères
+      compteur.textContent = `${texte.length}/${limiteCaracteres}`;
+  });
+}
+
+window.onload = function() {
+  limiterCaracteres();
+  verifierAge();
+};
+
+// lampe torche page contact
 const light = document.documentElement;
 light.addEventListener('mousemove', e =>{
     light.style.setProperty('--x', e.clientX +'px')
     light.style.setProperty('--y', e.clientY +'px')
 });
+///////////Fin page contact /////////////////////////////////////////////////
 
 // On récupère les titres
 const viewMore = document.querySelectorAll(".view-more");
