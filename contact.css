@@ -195,7 +195,7 @@ textarea{
     }
 } 
 
-/* @media screen and (min-width: 900px){
+@media screen and (min-width: 900px){
     .light{
         position: fixed;
         top: 0;
@@ -204,4 +204,4 @@ textarea{
         height: 100%;
         pointer-events: none;
         background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20% ); 
-     }  */
+     } 
