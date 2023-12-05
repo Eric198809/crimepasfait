@@ -22,11 +22,11 @@ function closePopup() {
   popup.classList.remove("open-popup");
 }
 
-// const light = document.documentElement;
-// light.addEventListener('mousemove', e =>{
-//     light.style.setProperty('--x', e.clientX +'px')
-//     light.style.setProperty('--y', e.clientY +'px')
-// });
+const light = document.documentElement;
+light.addEventListener('mousemove', e =>{
+    light.style.setProperty('--x', e.clientX +'px')
+    light.style.setProperty('--y', e.clientY +'px')
+});
 
 // On récupère les titres
 const viewMore = document.querySelectorAll(".view-more");
