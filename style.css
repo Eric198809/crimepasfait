@@ -1,3 +1,66 @@
+body {
+    background-color: gray;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background:  url(background.png), lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* #AboutUs-CrimiN .imgbg{
+    right:0px;
+    bottom: 0px; 
+    max-width: 100%;
+    height: auto;
+} */
+
+/* POPUP */
+.Hbutton {
+    cursor: pointer;
+}
+
+.full-story {
+    display: none;
+}
+
+.full-story.active {
+    display: initial;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+}
+
+.fsContainer  {
+    height: 50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: lightblue;
+}
+
+.close {
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    line-height: 2rem;
+    padding: 4px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 962px) { 
 
     /* Première section */
@@ -7,7 +70,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin: 50px auto;
     }
 
     .Htext {
@@ -29,6 +92,7 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 100px;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
     .Harticle {
@@ -75,7 +139,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
+        margin: 50px auto;
     }
 
     .Htext {
@@ -100,6 +164,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 15px;
+        margin-bottom: 50px;
     }
 
     .Harticle {

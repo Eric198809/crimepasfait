@@ -1,17 +1,11 @@
-
-
 .text{
-    margin-top: 25%;
-   
+    margin-top: 175px;
 }
 
 .text h1{
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-            animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes text-focus-in {
@@ -26,6 +20,7 @@
       opacity: 1;
     }
   }
+
   @keyframes text-focus-in {
     0% {
       -webkit-filter: blur(12px);
@@ -38,31 +33,22 @@
       opacity: 1;
     }
   }
-  
-
-
 
 header p{
     display: flex;
     justify-content: center;
     margin: 20px;
-    color: #FFFFFF;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .formul{
-
     display: flex;
     justify-content: center;
     text-align: justify;
-    
 }
 
 form{
     box-sizing: border-box;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
     width: 40%;
 }
 
@@ -82,8 +68,6 @@ input{
     border-radius: 6px;
     background: #D9D9D9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
-    font-family: 'Montserrat', sans-serif;
-
 }
 
 textarea{
@@ -99,19 +83,19 @@ textarea{
 .form_button{
     display: flex;
     justify-content: center;
-
 }
 
 .submit{
     width: 10vh;
     height: 25px;
 }
+
 .submit:hover{
     animation: heartbeat 1.5s ease-in-out infinite both;
     background: linear-gradient(#232526, #414345);
     color: #FFE500;
-    
 }
+
 @keyframes heartbeat {
     from {
       transform: scale(1);
@@ -134,7 +118,7 @@ textarea{
       transform: scale(1);
       animation-timing-function: ease-out;
     }
-  }
+}
   
 /* La popup */
 .contact_container{
@@ -161,11 +145,10 @@ textarea{
 }
 
 .open-popup{
-visibility: visible;
-top: 50%;
-transform: translate(-50%, -50%)scale(1);
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%)scale(1);
 }
-
 
 .popup img{
     width: 100px;
@@ -178,11 +161,6 @@ transform: translate(-50%, -50%)scale(1);
     font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.popup p{
-    font-family: 'Montserrat', sans-serif;
 }
 
 .popup button{
@@ -211,9 +189,13 @@ transform: translate(-50%, -50%)scale(1);
     .popup{
         width: 30vh;
     }
+
+    .open-popup{
+      top: 30%;
+    }
 } 
 
-/* @media screen and (min-width: 900px){
+@media screen and (min-width: 900px){
     .light{
         position: fixed;
         top: 0;
@@ -222,4 +204,4 @@ transform: translate(-50%, -50%)scale(1);
         height: 100%;
         pointer-events: none;
         background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20% ); 
-     }  */
+     } 
