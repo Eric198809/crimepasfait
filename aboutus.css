@@ -77,6 +77,23 @@ p::after {
     margin: 0;
 }
 
+.nom-git {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;
+
+}
+
+.images img.git{
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nom {
+    margin: 0;
+}
+
 @media screen and (min-width:769px) {
     .photos {
         display: grid;
@@ -123,5 +140,23 @@ p::after {
 
     .titre{
         font-size: 60px;
+    }
+
+    .nom-git {
+        display: flex;
+        align-items: center; 
+    
+    }
+    .nom {
+        margin: 0;
+    }
+    
+    .git{
+        margin-right: 10px;
+    }
+
+    .images img.git{
+        width: 10%;
+        height: auto;
     }
 }
