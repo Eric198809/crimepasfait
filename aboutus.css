@@ -77,6 +77,11 @@ p::after {
     padding: 1%;
     margin: 0;
 }
+.nom:hover, .images:hover{
+    color: #FFE500;
+}
+
+
 
 .nom-git {
     display: flex;
