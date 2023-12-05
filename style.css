@@ -22,11 +22,8 @@ body {
 } */
 
 /* POPUP */
-.Hbutton {
-    cursor: pointer;
-}
 
-.full-story {
+/* .full-story {
     display: none;
 }
 
@@ -59,6 +56,11 @@ body {
     line-height: 2rem;
     padding: 4px;
     cursor: pointer;
+} */
+
+.Hbutton {
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 962px) { 
@@ -90,9 +92,11 @@ body {
     #Hhistory {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 100px;
         justify-content: center;
         margin-bottom: 50px;
+        padding: 50px;
+        gap: 50px;
+        row-gap: 100px; 
     }
 
     .Harticle {
@@ -127,6 +131,7 @@ body {
         border-radius: 5px;
         padding-block: 5px;
         padding-inline: 20px;
+        margin: 0 auto;
     }
 }
 

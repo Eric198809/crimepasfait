@@ -62,22 +62,22 @@ criminuls.forEach(element => {
 
 // PAGE PRINCIPALE
 // On récupère les boutons
-const hButtons = document.querySelectorAll(".Hbutton");
+// const hButtons = document.querySelectorAll(".Hbutton");
 
-// On récupère la popup
-fullStory = document.querySelector(".full-story");
+// // On récupère la popup
+// fullStory = document.querySelector(".full-story");
 
-// On leur ajoute un eventListener 'click'
-hButtons.forEach(hButton => {
-  hButton.addEventListener('click', () => {
-    fullStory.classList.add("active");
-  })
+// // On leur ajoute un eventListener 'click'
+// hButtons.forEach(hButton => {
+//   hButton.addEventListener('click', () => {
+//     fullStory.classList.add("active");
+//   })
 
-  // On récupère le button de fermeture
-  const close = document.querySelector(".close");
+//   // On récupère le button de fermeture
+//   const close = document.querySelector(".close");
 
-  // On lui ajoute un eventListenr 'click'
-  close.addEventListener('click', () => {
-    fullStory.classList.remove("active");
-  })
-});
+//   // On lui ajoute un eventListenr 'click'
+//   close.addEventListener('click', () => {
+//     fullStory.classList.remove("active");
+//   })
+// });
