@@ -58,7 +58,7 @@ p::after {
 }
 
 .images img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.05); 
 }
 
 .photos{
@@ -130,6 +130,7 @@ p::after {
 
     .nom{
         font-size: 30px;
+        width: min-content;
     }
 
     .par{
@@ -162,11 +163,24 @@ p::after {
     .nom-git {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .nom-git a{
+        margin-left: 10px;
+        width: 10%;
     }
 
     .images img.git{
-        width: 15%;
-        height: auto;
-        margin-left: 10px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .para{
+        background-color: #4c4c4c4d;
+        border-radius: 8px;
+        margin-right: 100px;
     }
 }
