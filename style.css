@@ -2,6 +2,7 @@ body {
     background-color: gray;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
 }
 
 body {
@@ -61,6 +62,7 @@ body {
 .Hbutton {
     text-decoration: none;
     font-size: 1rem;
+
 }
 
 @media screen and (min-width: 962px) { 
@@ -131,7 +133,7 @@ body {
     }
 
     .Hbutton {
-        background-color:#ffffff;
+        background: #ffffff;
         color:#000000;
         border : 1px transparent solid;
         border-radius: 5px;
@@ -224,3 +226,54 @@ body {
         font-size: 0.7rem;
     }
 }
+
+
+ .Harticle:hover {
+    box-shadow: 0 0 5px #FFE500;
+    text-shadow: 0 7px 5px #000000;
+    transform: scale(1.03);
+  }
+
+  .Hbutton:link,
+  .Hbutton:visited {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: rgb(27, 27, 27);
+   padding: 10px 30px;
+   border: 1px solid;
+   border-radius: 1000px;
+   display: inline-block;
+   transition: all .2s;
+   position: relative;
+  }
+  
+  .Hbutton:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+   background: linear-gradient(#232526, #414345);
+   color: #FFE500;
+  }
+  
+  .Hbutton:active {
+   transform: translateY(-3px);
+  }
+  
+  .Hbutton::after {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   width: 100%;
+   border-radius: 100px;
+   top: 0;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+   transition: all .3s;
+  }
+  
+  .Hbutton:hover::after {
+   background-color: #FFE500;
+   transform: scaleX(1.4) scaleY(1.5);
+   opacity: 0;
+   
+  }
