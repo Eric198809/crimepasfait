@@ -69,6 +69,7 @@ p::after {
     margin-left: 80px;
 }
 
+
 .images .nom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -87,13 +88,16 @@ p::after {
     display: flex;
     align-items: center; 
     flex-direction: row-reverse;
-
 }
 
-.images img.git{
+
+.git{
     width: 10%;
     height: auto;
     margin-left: 10px;
+
+    
+
 }
 
 .nom {
