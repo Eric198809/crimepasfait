@@ -1,8 +1,7 @@
 body {
     background-color: gray;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 body {
@@ -99,6 +98,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         gap: 15px;
+        padding: 20px;
     }
 
     
@@ -277,3 +277,25 @@ body {
    opacity: 0;
    
   }
+
+  .police{
+   
+    display: flex;
+    align-items: center;
+    background-color: #bcaa00;
+    color: black;
+    
+}
+
+.txt{
+    white-space: nowrap;
+    font-size: 85px;
+    animation: scroll 10s linear infinite;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(-100%);
+    }
+}

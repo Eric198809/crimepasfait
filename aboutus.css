@@ -7,19 +7,15 @@
     text-align: center;
     transform-origin: center;
 }
+
     
 .animate {
-    animation: rotate 4s linear 1;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+@keyframes text-focus-in {0% {-webkit-filter: blur(12px); filter: blur(12px); opacity: 0;} 100% {-webkit-filter: blur(0px); filter: blur(0px); opacity: 1;}}
+
+
     
-@keyframes rotate {
-    from {
-        transform: rotate(0deg) scale(1);
-    }
-    to {
-        transform: rotate(360deg) scale(1.5);
-    }
-}
 
 .par{
     width: 70%;
@@ -33,6 +29,7 @@
     position: relative;
     padding-left: 10px;
 }
+
 
 p::after {
     content: '';
@@ -182,5 +179,9 @@ p::after {
         background-color: #4c4c4c4d;
         border-radius: 8px;
         margin-right: 100px;
+        padding: 10px;
     }
+
+
 }
+

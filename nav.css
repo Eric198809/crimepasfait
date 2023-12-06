@@ -24,12 +24,14 @@ nav a{
     font-size: 1.2rem;   
 }
 
-nav a:hover{
-    color: rgb(143, 138, 138);
+a:hover{
+    color: #FFE500;
+    
 }
 
 nav ul {
     margin: 0;
+    
 }
 
 /*Container logo et titre*/
