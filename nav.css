@@ -75,7 +75,7 @@ nav ul {
 
     /*Menu navbar*/
     .navmenu{
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 106px;
         flex-direction: column;
