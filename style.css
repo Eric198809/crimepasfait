@@ -78,7 +78,7 @@ body {
     }
 
     .Htext {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
     }
@@ -98,7 +98,7 @@ body {
         margin-bottom: 50px;
         margin-left: 10px;
         margin-right: 10px;
-        gap: 15px;
+        gap: 20px;
         padding: 20px;
     }
 
@@ -127,6 +127,8 @@ body {
         display:flex;
         flex-direction: column;
         margin-left: 40px;
+        padding-bottom: 10px;
+        margin-top: 10px;
     }
 
     .Hh2 {
