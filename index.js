@@ -3,9 +3,6 @@
 icons.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
-icons.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
 
 const links = document.querySelectorAll("navbar li");
 
@@ -184,7 +181,6 @@ desc.forEach((disc) => {
   });
 });
 //   // On lui ajoute un eventListenr 'click'
-//   close.addEventListener('click', () => {
-//     fullStory.classList.remove("active");
-//   })
-// });
+close.addEventListener("click", () => {
+  fullStory.classList.remove("active");
+});
