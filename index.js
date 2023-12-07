@@ -3,6 +3,9 @@
 icons.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
+icons.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
 
 const links = document.querySelectorAll("navbar li");
 
