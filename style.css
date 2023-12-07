@@ -117,11 +117,8 @@ body {
 
     .Himg {
         height: 200px;
-<<<<<<< HEAD
         width: 300px;
-=======
         border-radius: 15px 0px 0px 15px;
->>>>>>> dev
     }
 
 
@@ -143,11 +140,8 @@ body {
         border-radius: 5px;
         padding-block: 5px;
         padding-inline: 20px;
-<<<<<<< HEAD
         font-size: 1rem;
-=======
         margin: 0 auto;
->>>>>>> dev
     }
 }
 
@@ -236,7 +230,6 @@ body {
 }
 
 
-<<<<<<< HEAD
 @media screen and (min-width: 962px) { 
 
     /* Histoire */
@@ -530,7 +523,8 @@ body {
         display: none;
     }
 
-=======
+}
+
  .Harticle:hover {
     box-shadow: 0 0 5px #FFE500;
     text-shadow: 0 7px 5px #000000;
@@ -587,8 +581,7 @@ body {
     align-items: center;
     background-color: #bcaa00;
     color: black;
-    
-}
+  }
 
 .txt{
     white-space: nowrap;
@@ -601,5 +594,4 @@ body {
     0%{
         transform: translateX(-100%);
     }
->>>>>>> dev
 }

@@ -125,12 +125,11 @@ criminuls.forEach(element => {
 //   // On récupère le button de fermeture
 //   const close = document.querySelector(".close");
 
-<<<<<<< HEAD
   // On lui ajoute un eventListenr 'click'
-  close.addEventListener('click', () => {
-    fullStory.classList.remove("active");
-  })
-});
+//   close.addEventListener('click', () => {
+//     fullStory.classList.remove("active");
+//   })
+// });
 
 // Histoire
 
@@ -185,10 +184,8 @@ desc.forEach(disc => {
     e.target.parentNode.classList.remove("active");
   })
 });
-=======
 //   // On lui ajoute un eventListenr 'click'
 //   close.addEventListener('click', () => {
 //     fullStory.classList.remove("active");
 //   })
 // });
->>>>>>> dev
