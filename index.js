@@ -1,6 +1,5 @@
 /* //////Navbar/////////*/
 
-
 const links = document.querySelectorAll("navbar li");
 
 links.forEach((link) => {
