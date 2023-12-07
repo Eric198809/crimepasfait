@@ -2,6 +2,7 @@ body {
     background-color: gray;
     color: white;
     font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
 }
 
 body {
@@ -282,14 +283,16 @@ body {
    
     display: flex;
     align-items: center;
+    height: 50px;
     background-color: #bcaa00;
     color: black;
+    overflow-x: hidden;
     
 }
 
 .txt{
     white-space: nowrap;
-    font-size: 85px;
+    font-size: 65px;
     animation: scroll 10s linear infinite;
     font-family: 'Montserrat', sans-serif; 
 }
@@ -297,5 +300,8 @@ body {
 @keyframes scroll {
     0%{
         transform: translateX(-100%);
+    }
+    100%{
+        transform: translate(0%);
     }
 }
