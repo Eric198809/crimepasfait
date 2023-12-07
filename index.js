@@ -1,8 +1,6 @@
 /* //////Navbar/////////*/
 
-icons.addEventListener("click", () => {
-navbar.classList.toggle("active");
-});
+
 
 const links = document.querySelectorAll("navbar li");
 
@@ -109,8 +107,8 @@ criminuls.forEach(element => {
     })
 })
 
-PAGE PRINCIPALE
-On récupère les boutons
+// PAGE PRINCIPALE
+// On récupère les boutons
 const hButtons = document.querySelectorAll(".Hbutton");
 
 // On récupère la popup
@@ -125,7 +123,7 @@ hButtons.forEach(hButton => {
   // On récupère le button de fermeture
   const close = document.querySelector(".close");
 
-  On lui ajoute un eventListenr 'click'
+  // On lui ajoute un eventListenr 'click'
   close.addEventListener('click', () => {
     fullStory.classList.remove("active");
   })
@@ -188,3 +186,5 @@ desc.forEach(disc => {
   close.addEventListener('click', () => {
     fullStory.classList.remove("active");
   });
+
+

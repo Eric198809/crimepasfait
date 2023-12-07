@@ -254,13 +254,20 @@ body {
     }
 
     .Sreturn {
-        background-color:#ffffff;
-        color:#000000;
+        background-color:#333;
+        color:#FFE500;
         border : 1px transparent solid;
         border-radius: 5px;
         padding-block: 5px;
         padding-inline: 20px;
         font-size: 0.7rem;
+        text-decoration: none;
+    }
+    
+    .Sreturn:hover{
+            box-shadow: 0 0 5px #FFE500;
+            text-shadow: 0 7px 5px #000000;
+            transform: scale(1.03); 
     }
 
     /* article 2*/
@@ -287,6 +294,7 @@ body {
 
     .Sfaits  {
         display: none;
+        
     }
 
     /* article 3*/
@@ -347,7 +355,7 @@ body {
     /* button inspecteur et suspect*/
 
     .Sbutton.active .Sfaits, .Sbutton.active .Srecaps {
-        color: black;
+        color: rgb(255, 255, 255);
         width: 100%;
         font-size: 0.8rem;
         display: initial;
@@ -355,7 +363,12 @@ body {
         position: absolute;
         top:0;
         left:0;
-        background-color: #ffffff;
+        background-color: #333;
+        border-radius: 8px;
+    }
+
+    .Sfaits,.Srecaps,h1{
+        color: #FFE500
     }
 
     .Sbutton.active .Ssrc1, .Sbutton.active .Ssrc2 {
@@ -584,6 +597,7 @@ body {
     background-color: #bcaa00;
     color: black;
     overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 
@@ -601,4 +615,11 @@ body {
     100%{
         transform: translate(0%);
     }
+}
+
+/* close popup recap */
+.closepopupX{
+ margin-left: 220px;   
+ margin-top: 10px;
+ font-size: 1.2em;
 }

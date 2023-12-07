@@ -221,6 +221,10 @@ textarea{
  
 } 
 
+.police{
+  overflow-y: hidden;
+}
+
 @media screen and (min-width: 900px){
     .light{
         position: fixed;
