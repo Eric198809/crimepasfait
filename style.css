@@ -584,7 +584,10 @@ body {
     background-color: #bcaa00;
     color: black;
     overflow-x: hidden;
-    
+}
+
+.police::-webkit-scrollbar {
+    display: none;
 }
 
 .txt{
