@@ -1,8 +1,8 @@
 /* //////Navbar/////////*/
 
-icons.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
+// icons.addEventListener("click", () => {
+//   navbar.classList.toggle("active");
+// });
 
 const links = document.querySelectorAll("navbar li");
 
@@ -125,8 +125,70 @@ criminuls.forEach(element => {
 //   // On récupère le button de fermeture
 //   const close = document.querySelector(".close");
 
+<<<<<<< HEAD
+  // On lui ajoute un eventListenr 'click'
+  close.addEventListener('click', () => {
+    fullStory.classList.remove("active");
+  })
+});
+
+// Histoire
+
+const cases = document.querySelectorAll(".Simgcase");
+
+cases.forEach(cose => {
+  cose.addEventListener('click', (e) => {
+    e.target.parentNode.classList.add("active");
+  })
+});
+
+const opens = document.querySelectorAll(".Shide");
+
+opens.forEach(opan => {
+  opan.addEventListener('click', (e) => {
+    e.target.parentNode.classList.remove("active");
+  })
+});
+
+// Button suspect
+
+const suspect = document.querySelectorAll(".Ssrc1");
+
+suspect.forEach(saspect => {
+  saspect.addEventListener('click', (e) => {
+    e.target.parentNode.classList.add("active");
+  })
+});
+
+const hist = document.querySelectorAll(".Sfaits");
+
+hist.forEach(hest => {
+  hest.addEventListener('click', (e) => {
+    e.target.parentNode.classList.remove("active");
+  })
+});
+
+// Button inspecteur
+
+const inspect = document.querySelectorAll(".Ssrc2");
+
+inspect.forEach(anspect => {
+  anspect.addEventListener('click', (e) => {
+    e.target.parentNode.classList.add("active");
+  })
+});
+
+const desc = document.querySelectorAll(".Srecaps");
+
+desc.forEach(disc => {
+  disc.addEventListener('click', (e) => {
+    e.target.parentNode.classList.remove("active");
+  })
+});
+=======
 //   // On lui ajoute un eventListenr 'click'
 //   close.addEventListener('click', () => {
 //     fullStory.classList.remove("active");
 //   })
 // });
+>>>>>>> dev
