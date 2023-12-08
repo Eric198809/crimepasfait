@@ -1,5 +1,9 @@
 /* //////Navbar/////////*/
 
+icons.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
 const links = document.querySelectorAll("navbar li");
 
 links.forEach((link) => {
@@ -109,18 +113,18 @@ const hButtons = document.querySelectorAll(".Hbutton");
 fullStory = document.querySelector(".full-story");
 
 // On leur ajoute un eventListener 'click'
-hButtons.forEach(hButton => {
-  hButton.addEventListener('click', () => {
+hButtons.forEach((hButton) => {
+  hButton.addEventListener("click", () => {
     fullStory.classList.add("active");
-  })
+  });
 
   // On récupère le button de fermeture
   const close = document.querySelector(".close");
 
   // On lui ajoute un eventListenr 'click'
-  close.addEventListener('click', () => {
+  close.addEventListener("click", () => {
     fullStory.classList.remove("active");
-  })
+  });
 });
 
 // Histoire
@@ -176,9 +180,7 @@ desc.forEach((disc) => {
     e.target.parentNode.classList.remove("active");
   });
 });
-  // On lui ajoute un eventListenr 'click'
-  close.addEventListener('click', () => {
-    fullStory.classList.remove("active");
-  });
-
-
+// On lui ajoute un eventListenr 'click'
+close.addEventListener("click", () => {
+  fullStory.classList.remove("active");
+});
