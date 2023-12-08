@@ -423,13 +423,14 @@ body {
     }
 
     .Sreturn {
-        background-color:#ffffff;
-        color:#000000;
+        background-color:#333;
+        color:#FFE500;
         border : 1px transparent solid;
         border-radius: 5px;
         padding-block: 5px;
         padding-inline: 20px;
         font-size: 0.7rem;
+        text-decoration: none;
     }
 
     /* article 2*/
@@ -506,15 +507,20 @@ body {
     /* button inspecteur et suspect*/
 
     .Sbutton.active .Sfaits, .Sbutton.active .Srecaps {
-        color: black;
+        color: rgb(255, 255, 255);
         width: 100%;
-        height: max-content;
         font-size: 0.8rem;
         display: initial;
-        background-color: #ffffff;
+        height: max-content;
         position: absolute;
         top:0;
         left:0;
+        background-color: #333;
+        border-radius: 8px;
+    }
+
+    .Sfaits,.Srecaps,h1{
+        color: #FFE500
     }
 
     .Sbutton.active {
@@ -620,10 +626,10 @@ body {
         transform: translate(0%);
     }
 }
-
-/* close popup recap */
+/* 
+close popup recap
 .closepopupX{
  margin-left: 220px;   
  margin-top: 10px;
  font-size: 1.2em;
-}
+} */
