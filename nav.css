@@ -24,12 +24,14 @@ nav a{
     font-size: 1.2rem;   
 }
 
-nav a:hover{
-    color: rgb(143, 138, 138);
+a:hover{
+    color: #FFE500;
+    
 }
 
 nav ul {
     margin: 0;
+    
 }
 
 /*Container logo et titre*/
@@ -73,21 +75,21 @@ nav ul {
 
     /*Menu navbar*/
     .navmenu{
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 106px;
         flex-direction: column;
         width: 100%;
         text-align: center;
         transition: 0.25s;
-        background: #080404;
+        background: linear-gradient(5deg, #000 0%, rgb(59, 57, 57) 0.01%, rgb(0 0 0) 0.02%, rgba(0, 0, 0, 0.954) 100%);
         padding: 0;
         z-index: 1;
     }
 
     /*Lignes menu navbar*/
     nav li{
-        padding: 5px;
+        padding: 15px;
     }
 
     nav li:hover{

@@ -1,7 +1,8 @@
 body {
     background-color: gray;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 
 /* POPUP */
 
-/* .full-story {
+.full-story {
     display: none;
 }
 
@@ -56,11 +57,12 @@ body {
     line-height: 2rem;
     padding: 4px;
     cursor: pointer;
-} */
+}
 
 .Hbutton {
     text-decoration: none;
     font-size: 1rem;
+
 }
 
 @media screen and (min-width: 962px) { 
@@ -76,7 +78,7 @@ body {
     }
 
     .Htext {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
     }
@@ -96,7 +98,8 @@ body {
         margin-bottom: 50px;
         margin-left: 10px;
         margin-right: 10px;
-        gap: 15px;
+        gap: 20px;
+        padding: 20px;
     }
 
     
@@ -115,6 +118,7 @@ body {
 
     .Himg {
         height: 200px;
+        width: 300px;
         border-radius: 15px 0px 0px 15px;
     }
 
@@ -123,6 +127,8 @@ body {
         display:flex;
         flex-direction: column;
         margin-left: 40px;
+        padding-bottom: 10px;
+        margin-top: 10px;
     }
 
     .Hh2 {
@@ -131,12 +137,13 @@ body {
     }
 
     .Hbutton {
-        background-color:#ffffff;
+        background: #ffffff;
         color:#000000;
         border : 1px transparent solid;
         border-radius: 5px;
         padding-block: 5px;
         padding-inline: 20px;
+        font-size: 1rem;
         margin: 0 auto;
     }
 }
@@ -224,3 +231,405 @@ body {
         font-size: 0.7rem;
     }
 }
+
+
+@media screen and (min-width: 962px) { 
+
+    /* Histoire */
+
+    #Sbackground {
+        background-image: url(inspectRoom.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #Sback {
+        display : flex;
+        justify-content: space-between;
+    }
+
+    /* article 1*/
+
+    .Sbut {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .Sreturn {
+        background-color:#333;
+        color:#FFE500;
+        border : 1px transparent solid;
+        border-radius: 5px;
+        padding-block: 5px;
+        padding-inline: 20px;
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+    
+    .Sreturn:hover{
+            box-shadow: 0 0 5px #FFE500;
+            text-shadow: 0 7px 5px #000000;
+            transform: scale(1.03); 
+    }
+
+    /* article 2*/
+
+    .Ssuspect {
+        margin-top: 440px;
+        margin-inline: 40px;
+    }
+
+    .Sbutton {
+        cursor: pointer;
+        height:100%;
+        width:250px;
+        position: relative;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        height: max-content;
+    }
+
+    .Sbutton::-webkit-scrollbar {
+        display:none;
+    }
+
+    .Sfaits  {
+        display: none;
+        
+    }
+
+    /* article 3*/
+
+    .Sfolder {
+        display: flex;
+        background-color: gray;
+        border: 5px black solid;
+        border-radius: 20px;
+        height : 200px;
+        margin-top: 350px;
+        align-items: center;
+        text-align: center;
+        box-shadow: #000000 2px 2px 2px 2px;
+    }
+
+    .Scase1, .Scase2, .Scase3 {
+        margin-inline: 20px;
+    }
+
+    .Spress {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+
+    .Simgcase {
+        height: 60px;
+    }
+
+    .Shide {
+        height: 90px;
+        width: 90px;
+    }
+
+    #Simgopen1, #Simgopen2, #Simgopen3 {
+        display: none;
+    }
+
+    .Stext {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+
+    /* article 4 */
+
+    
+    .Sinspector {
+        margin-top: 400px;
+        margin-left:40px;
+        margin-right:200px;
+    }
+
+    .Srecaps {
+        display: none;
+    }
+
+    /* button inspecteur et suspect*/
+
+    .Sbutton.active .Sfaits, .Sbutton.active .Srecaps {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        font-size: 0.8rem;
+        display: initial;
+        height: max-content;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #333;
+        border-radius: 8px;
+    }
+
+    .Sfaits,.Srecaps,h1{
+        color: #FFE500
+    }
+
+    .Sbutton.active .Ssrc1, .Sbutton.active .Ssrc2 {
+        display: none;
+    }
+
+    .Sbutton.active {
+        height: 300px;
+    }
+
+    /* button folder*/
+
+    .Sbutton.active .Ssrc {
+        display: none;
+    }
+
+    .Sbefor.active #Simgopen1, .Sbefor.active #Simgopen2, .Sbefor.active #Simgopen3 {
+        display: initial;
+    }
+    .Sbefor.active .Simgcase {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 962px) { 
+
+        /* Histoire */
+
+    #Sbackground {
+        background-image: url(inspectRoom.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vw;
+    }
+
+    #Sback {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 200px;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    /* article 1*/
+
+    .Sbut {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .Sreturn {
+        background-color:#333;
+        color:#FFE500;
+        border : 1px transparent solid;
+        border-radius: 5px;
+        padding-block: 5px;
+        padding-inline: 20px;
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+
+    /* article 2*/
+
+    .Ssuspect {
+        height : 100px;
+        margin-top: 340px;
+        margin-inline: 5px;
+    }
+
+    .Sbutton {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: auto;
+        width:200px;
+        height:max-content;
+    }
+
+    .Sbutton::-webkit-scrollbar {
+        display:none;
+    }
+
+    .Sfaits {
+        display: none;
+    }
+
+    /* article 3*/
+
+    .Sfolder {
+        display: flex;
+        background-color: gray;
+        border: 5px black solid;
+        border-radius: 20px;
+        height : 150px;
+        margin-top: 350px;
+        align-items: center;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .Spress {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+
+    .Simgcase {
+        height: 60px;
+        margin-inline: 20px;
+    }
+
+    .Shide {
+        height: 90px;
+        width: 90px;
+    }
+
+    #Simgopen1, #Simgopen2, #Simgopen3 {
+        display: none;
+    }
+
+    /*article 4*/
+
+    .Srecaps {
+        display: none;
+    }
+    
+    /* button inspecteur et suspect*/
+
+    .Sbutton.active .Sfaits, .Sbutton.active .Srecaps {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        font-size: 0.8rem;
+        display: initial;
+        height: max-content;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #333;
+        border-radius: 8px;
+    }
+
+    .Sfaits,.Srecaps,h1{
+        color: #FFE500
+    }
+
+    .Sbutton.active {
+        height: 300px;
+    }
+
+    .Sbutton.active .Ssrc1, .Sbutton.active .Ssrc2 {
+        display: none;
+    }
+
+    .Ssrc1, .Ssrc2 {
+        height: 400px;
+        margin-top:50px;
+    }
+
+    /* button folder */
+
+    .Sbefor.active #Simgopen1, .Sbefor.active #Simgopen2, .Sbefor.active #Simgopen3 {
+        display: initial;
+    }
+    .Sbefor.active .Simgcase {
+        display: none;
+    }
+
+}
+
+ .Harticle:hover {
+    box-shadow: 0 0 5px #FFE500;
+    text-shadow: 0 7px 5px #000000;
+    transform: scale(1.03);
+  }
+
+  .Hbutton:link,
+  .Hbutton:visited {
+   text-transform: uppercase;
+   text-decoration: none;
+   color: rgb(27, 27, 27);
+   padding: 10px 30px;
+   border: 1px solid;
+   border-radius: 1000px;
+   display: inline-block;
+   transition: all .2s;
+   position: relative;
+  }
+  
+  .Hbutton:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+   background: linear-gradient(#232526, #414345);
+   color: #FFE500;
+  }
+  
+  .Hbutton:active {
+   transform: translateY(-3px);
+  }
+  
+  .Hbutton::after {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   width: 100%;
+   border-radius: 100px;
+   top: 0;
+   left: 0;
+   position: absolute;
+   z-index: -1;
+   transition: all .3s;
+  }
+  
+  .Hbutton:hover::after {
+   background-color: #FFE500;
+   transform: scaleX(1.4) scaleY(1.5);
+   opacity: 0;
+   
+  }
+
+  .police{
+   
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #bcaa00;
+    color: black;
+    overflow-x: hidden;
+}
+
+.police::-webkit-scrollbar {
+    display: none;
+}
+
+.txt{
+    white-space: nowrap;
+    font-size: 65px;
+    animation: scroll 10s linear infinite;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+/* 
+close popup recap
+.closepopupX{
+ margin-left: 220px;   
+ margin-top: 10px;
+ font-size: 1.2em;
+} */
